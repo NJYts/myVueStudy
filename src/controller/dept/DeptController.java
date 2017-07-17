@@ -4,6 +4,7 @@ package controller.dept;
 import java.util.List;
 
 
+
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 
@@ -17,6 +18,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import service.PageService;
 import dao.DeptDao;
@@ -126,8 +128,13 @@ public class DeptController {
 	 * @return
 	 */
 	@RequestMapping(value = "/vue")
-	public String vue(){
-		return "vue/vue";
+	public String vue(@RequestParam("flag") String flag){
+		if(flag.equals("2")){
+			return "vue/vue2";
+		}else{
+			return "vue/vue";
+		}
+		
 	}
 	/**
 	 * 登录验证֤

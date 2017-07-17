@@ -20,7 +20,7 @@
 		<tr>
 			<!-- <td colspan="4"><a href="http://localhost:8080/My/add.jsp">添加部门</a></td> -->
 			<td colspan="2"><a href="${ctx}/dept/getById_dept">添加部门</a></td>
-			<td colspan="2"><a href="${ctx}/dept/vue"> Go To Vue.js</a></td>
+			<td colspan="2"><a href="${ctx}/dept/vue?flag='0'"> Go To Vue.js</a></td>
 		</tr>
 		<tr style="border-color: #9dca59;background-color: #019fe6;">
 			<th style="width:140px;">部门名称：</th>
