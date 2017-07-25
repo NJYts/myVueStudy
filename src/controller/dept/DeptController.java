@@ -44,7 +44,6 @@ public class DeptController {
 
 	/**
 	 * 判断用户是否登录
-	 * @param currUser
 	 * @return
 	 */
 	@RequestMapping(value = "/login",method=RequestMethod.POST)
@@ -65,7 +64,6 @@ public class DeptController {
 	 * 分页展示
 	 * 
 	 * @param request 路径 对应工作空间@RequestMapping 的顺序，不需要加项目结构路径
-	 * @param response 路径 jsp对应项目结构路径
 	 * @return
 	 */
 	@RequestMapping(value = "/showAll")
@@ -124,17 +122,30 @@ public class DeptController {
 	}
 	
 	/**
-	 * 
+	 * Vue.js
 	 * @return
 	 */
 	@RequestMapping(value = "/vue")
-	public String vue(@RequestParam("flag") String flag){
-		if(flag.equals("2")){
+	public String vue(@RequestParam("flag") String flag) {
+		if (flag.equals("2")) {
 			return "vue/vue2";
-		}else{
+		} else {
 			return "vue/vue";
 		}
-		
+
+	}
+	/**
+	 *Bootstrap
+	 * @return
+	 */
+	@RequestMapping(value = "/bootstrap")
+	public String bootstrap(@RequestParam("flag") String flag){
+		if(flag.equals("1")){
+			return "bootstrap/bootstrap1";
+		}else{
+			return "bootstrap/bootstrap";
+		}
+
 	}
 	/**
 	 * 登录验证֤

@@ -6,6 +6,9 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="${ctx}\js\bootstrap\css\bootstrap.min.css">
+	<script src="${ctx}\js\jquery\jquery-1.9.1.min.js"></script>
+	<script src="${ctx}\js\bootstrap\js\bootstrap.min.js"></script>
 <title>Insert title here</title>
 </head>
 <body>
@@ -19,8 +22,9 @@
 	<table border="1" style="border-collapse:collapse;height:600px; width:500px; margin:auto;text-align:center" >
 		<tr>
 			<!-- <td colspan="4"><a href="http://localhost:8080/My/add.jsp">添加部门</a></td> -->
-			<td colspan="2"><a href="${ctx}/dept/getById_dept">添加部门</a></td>
 			<td colspan="2"><a href="${ctx}/dept/vue?flag='0'"> Go To Vue.js</a></td>
+			<td colspan="1"><a href="${ctx}/dept/getById_dept">添加部门</a></td>
+			<td colspan="2"><a href="${ctx}/dept/bootstrap?flag='0'"> Go To Bootstrap</a></td>
 		</tr>
 		<tr style="border-color: #9dca59;background-color: #019fe6;">
 			<th style="width:140px;">部门名称：</th>
