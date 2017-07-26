@@ -8,7 +8,7 @@
   <head>
     <base href="<%=basePath%>">
     <title>My JSP 'vue.jsp' starting page</title>
-    <script type="text/javascript" src="${ctx }/js/vue/vue.min.js""></script>
+    <script type="text/javascript" src="${ctx }/js/vue/vue.min.js"></script>
   </head>
 	<style>
 	a { text-decoration: none} 
@@ -34,22 +34,21 @@
 	<!-- <div id="app">
     	{{message}}
     </div> -->
-	 使用 v-html 指令用于输出 html 代码：<br><br>
+	 使用v-html指令用于输出html代码：<br><br>
 	<div id="app">
 		<div v-html="message"></div>
 		
 	</div>
 	----------------------------------------------------------<br>
-	 HTML 属性中的值应使用 v-bind 指令。
-	以下实例判断 class1 的值，如果为 true 使用 class1 类的样式，否则不使用该类：<br><br>
+	 HTML 属性中的值应使用v-bind指令。
+	以下实例判断class1的值，如果 true使用class1类的样式，否则不使用该类：<br><br>
 	<div id="test">
 		<label for="in">修改颜色</label><input type="checkbox" v-model="class1" id="in">
 		<br><br>
 		<div v-bind:class="{'class1':class1}">my first time!</div>
 	</div>
 	----------------------------------------------------------<br>
-	表达式
-	Vue.js 都提供了完全的 JavaScript 表达式支持。<br><br>
+	表达式vue。js 都提供了完全的javaScript表达式支持。<br><br>
 	<div id="app1">
 	{{5+5}}<br>
 	{{ ok ? 'YES' : 'NO' }}<br>
