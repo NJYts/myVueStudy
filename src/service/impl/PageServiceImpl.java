@@ -39,13 +39,13 @@ public class PageServiceImpl implements PageService {
 	     * */
 	
 	    public Page queryForPage(int currentPage,int pageSize) {
-	        Page page = new Page();        
+	        Page page = new Page();
 	        //总记录数
 	        int allRow = pageDao.getAllRowCount();
 	        //当前页开始记录
-	        int start = page.countOffset(currentPage,pageSize);  
+	        int start = page.countOffset(currentPage,pageSize);
 	        //分页查询结果集
-	        List<Dept> list = pageDao.queryForPage(start, pageSize); 
+	        List<Dept> list = pageDao.queryForPage(start, pageSize);
 
 	        page.setPageNo(currentPage);
 	        page.setPageSize(pageSize);
